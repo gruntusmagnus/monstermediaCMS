@@ -1,0 +1,23 @@
+/*--------------------------------------------------------------
+-- Pagination
+--------------------------------------------------------------*/
+
+.pagination {
+
+  li {
+    margin: 0 0.3rem;
+
+    a, span {
+      padding: 0.9rem 0.9rem;
+      border-radius: 3px;
+      border: 1px solid #aa9a63;
+      font-weight: 700;
+
+      &:hover, &:focus {
+        border: 1px solid #aa9a63;
+        background-color: #aa9a63;
+        color: #fff;
+      }
+    }
+  }
+}

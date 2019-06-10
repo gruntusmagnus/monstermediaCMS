@@ -1,0 +1,9 @@
+<?php
+
+return [
+    'name'        => '$Module$',
+    'alias'       => '$module$',
+    'description' => '',
+    'provider'    => \$BaseNamespace$\Providers\$Module$ServiceProvider::class,
+    'installer'   => \$BaseNamespace$\Installer::class,
+];

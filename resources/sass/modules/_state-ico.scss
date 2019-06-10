@@ -1,0 +1,52 @@
+/*--------------------------------------------------------------
+-- State ico
+--------------------------------------------------------------*/
+
+.state-ico {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin-bottom: -8px;
+}
+
+.state-ico--green {
+  background-color: $green;
+}
+
+.state-ico--yellow {
+  background-color: $yellow;
+}
+
+.state-ico--red {
+  background-color: $red;
+}
+
+.state-ico--blue {
+  background-color: $blue;
+}
+
+.state-ico--indigo {
+  background-color: $indigo;
+}
+
+.state-ico--purple {
+  background-color: $purple;
+}
+
+.state-ico--pink {
+  background-color: $pink;
+}
+
+.state-ico--orange {
+  background-color: $orange;
+}
+
+.state-ico--teal {
+  background-color: $teal;
+}
+
+.state-ico--cyan {
+  background-color: $cyan;
+}

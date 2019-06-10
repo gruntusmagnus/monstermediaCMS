@@ -1,0 +1,51 @@
+/*--------------------------------------------------------------
+-- Typography
+--------------------------------------------------------------*/
+
+.ico-close {
+  width: 23px;
+  height: 23px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  background-image: url(/img/ico-close.png);
+  opacity: 1;
+}
+
+.drag-and-drop {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 10px;
+  background-color: #dddddd;
+  font-size: 0.8rem;
+  cursor: move;
+
+  .fas {
+    margin-right: 6px;
+  }
+}
+
+.action-icon {
+  display: inline-block;
+  margin-left: 8px;
+  margin-right: 8px;
+  color: #000;
+  cursor: pointer;
+
+  &:hover, &:focus {
+    color: #000;
+    opacity: 0.6;
+  }
+}
+
+.main-title {
+  color: #010001;
+  font-size: 30px;
+  font-weight: 400;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  @media only screen and (max-width: 600px) {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}

@@ -1,0 +1,8 @@
+
+// Nastaveni adresy API serveru (v pripade ze ma bezet jinde nez na stejne domene)
+// plus moznost vlozeni libovolneho - neverzovaneho - nastaveni (klice, hesla atp...)
+
+export default {
+	API_URL: '/api/', // toto zatim nefunguje vsude, resp. na dost malo mistech...
+	WS_PORT: 6100 // toto je ale potreba mit nastavene na stejnou hodnotu, jako je v laravel-echo-server.json -> port
+}

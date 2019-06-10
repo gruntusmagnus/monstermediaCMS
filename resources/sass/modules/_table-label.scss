@@ -1,0 +1,53 @@
+/*--------------------------------------------------------------
+-- Table label
+--------------------------------------------------------------*/
+
+.table-label {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 26px;
+  padding: 6px 20px;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+
+.table-label--green {
+  background-color: $green;
+}
+
+.table-label--red {
+  background-color: $red;
+}
+
+.table-label--yellow {
+  background-color: $yellow;
+}
+
+.table-label--blue {
+  background-color: $blue;
+}
+
+.table-label--indigo {
+  background-color: $indigo;
+}
+
+.table-label--purple {
+  background-color: $purple;
+}
+
+.table-label--pink {
+  background-color: $pink;
+}
+
+.table-label--orange {
+  background-color: $orange;
+}
+
+.table-label--teal {
+  background-color: $teal;
+}
+
+.table-label--cyan {
+  background-color: $cyan;
+}

@@ -1,0 +1,9 @@
+<?php
+
+return [
+    'name' => '$Module$',
+    'description' => '',
+    'hasSubmodules' => true,
+    'installer' => \$BaseNamespace$\Installer::class, // can be ommited
+
+];

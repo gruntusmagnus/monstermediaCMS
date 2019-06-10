@@ -1,0 +1,10 @@
+<?php
+\Route::group([
+                 'prefix'     => '$module$',
+                 'namespace'  => '$BaseNamespace$\Http\Controllers'
+             ], function () {
+
+	#CONTENT#
+
+
+});

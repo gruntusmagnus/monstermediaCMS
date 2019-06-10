@@ -1,0 +1,76 @@
+build_settings:
+  verbose: false
+  prefer_symlink: false
+
+  mysql:
+    host: 'localhost'
+    user: 'phpci_build'
+    pass: 'MyYE8STxcduH1Ep8!'
+
+setup:
+  mysql:
+    command: "CREATE DATABASE phpci_build_%BUILD%;"
+    import-from-file:
+      import:
+        database: "phpci_build_%BUILD%"
+        file: "/database/structure.sql"
+
+#  grunt:
+#    task: "prod"
+
+  shell:
+    - "cat .env.example | sed -e 's/DB_DATABASE=homestead/DB_DATABASE=phpci_build_%BUILD%/' | sed -e 's/DB_USERNAME=homestead/DB_USERNAME=phpci_build/' | sed -e 's/DB_PASSWORD=secret/DB_PASSWORD=MyYE8STxcduH1Ep8!/' > .env"
+    - "php artisan key:generate"
+    - "php artisan db:seed --force -n"
+    - "php artisan migrate --force -n"
+  env:
+    APP_ENV: "testing"
+
+test:
+  #php_parallel_lint:
+  #  ignore:
+  #    - vendor/
+  #    - _ide_helper.php
+  #php_code_sniffer:
+  #  standard: "/phpcs.xml"
+  #  allowed_errors: 0
+  #  allowed_warnings: -1 #unlimited
+  #  path: "app"
+  #  ignore:
+  #    - "app/views"
+  #  standard: "PSR1,PSR2"
+  #php_mess_detector:
+  #  path: "app"
+  #  rules:
+  #    - "cleancode"
+  #    - "controversial"
+  #    - "codesize"
+  #    - "design"
+  #    - "naming"
+  #    - "unusedcode"
+  #  allow_failures: true
+  #  zero_config: true # do not make build as failed if something was detected
+  #php_unit:
+  #  config:
+  #    - "phpunit.xml"
+  #  path: "tests/"
+
+failure:
+  email:
+    committer: true
+    default_mailto_address: vojtech.hlavsa@monstermedia.cz
+
+branch-deploy_development:
+  success:
+    email:
+      default_mailto_address: vojtech.hlavsa@monstermedia.cz
+
+    deployer:
+      webhook_url: "https://deployer.monstermedia.cz/deploy/4arXPGWMlULjiiuRga0gDFuKvoNqvepfXzi39rIK4rvuau3kgb60rkG74MX8"
+      reason: "Build #%BUILD% - %COMMIT_MESSAGE%"
+      update_only: true
+
+
+complete:
+  mysql:
+    - "DROP DATABASE phpci_build_%BUILD%;"

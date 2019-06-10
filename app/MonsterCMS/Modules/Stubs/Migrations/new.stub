@@ -1,0 +1,28 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class $MigrationName$ extends Migration
+{
+    /**
+     * Run migration
+     */
+    public function up()
+    {
+        Schema::table('$TableName$', function (Blueprint $table) {
+
+        });
+    }
+
+    /**
+     * Rollback migration
+     */
+    public function down()
+    {
+        Schema::table('$TableName$', function (Blueprint $table) {
+
+        });
+    }
+}

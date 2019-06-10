@@ -1,0 +1,120 @@
+/*--------------------------------------------------------------
+-- Login
+--------------------------------------------------------------*/
+
+.login {
+  background-color: #000;
+}
+
+.login__header {
+  padding-top: 1.2em;
+  padding-bottom: 1.2em;
+  text-align: center;
+
+  img {
+    width: 134px;
+    height: 27px;
+  }
+}
+
+.login__form {
+  background-color: #000;
+  color: #fff;
+  max-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+
+  .card-header {
+    background-color: #000;
+    border-bottom: 1px solid #a89862;
+    color: #a89862;
+    font-size: 1.1em;
+    text-align: center;
+  }
+
+  .btn {
+    font-size: 0.7rem;
+    padding: 0.4rem 1.7rem;
+    border-radius: 0.18rem;
+  }
+
+  .btn-primary {
+    width: 100%;
+  }
+
+  .btn-link {
+    width: 100%;
+  }
+  
+  label {
+    color: #fff;
+    font-size: 0.7rem;
+  }
+
+  .col-form-label {
+    padding-top: calc(0.2rem + 1px);
+    padding-bottom: calc(0.2rem + 1px);
+  }
+
+  .form-control {
+    height: calc(1.3em + 0.5rem + 2px);
+    padding: 0.3rem 0.5rem;
+    font-size: 0.7rem;
+  }
+
+  .form-group {
+    margin-bottom: 0.7rem;
+  }
+}
+
+.login__alerts {
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.login--admin {
+
+  .login__header {
+    padding-top: 1.8em;
+    padding-bottom: 1.8em;
+
+    img {
+      width: 199px;
+      height: 40px;
+    }
+  }
+
+  .login__form {
+    max-width: 450px;
+
+    .card-header {
+      font-size: 1.8em;
+    }
+
+    .btn {
+      font-size: 1rem;
+      padding: 0.6rem 2.4rem;
+      border-radius: 0.28rem;
+    }
+
+    label {
+      font-size: 1rem;
+    }
+
+    .col-form-label {
+      padding-top: calc(0.3rem + 1px);
+      padding-bottom: calc(0.3rem + 1px);
+    }
+
+    .form-control {
+      height: calc(1.8em + 0.7rem + 2px);
+      padding: 0.6rem 0.7rem;
+      font-size: 1rem;
+    }
+
+    .form-group {
+      margin-bottom: 1rem;
+    }
+  }
+}

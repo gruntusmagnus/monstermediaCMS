@@ -1,0 +1,36 @@
+<?php
+
+namespace $BaseNamespace$\Providers;
+
+use $ModuleManagerServiceProviderNamespace$ as ServiceProvider;
+
+/**
+ * Class $Module$ServiceProvider
+ *
+ * Service provider for module $Module$
+ */
+class $Module$ServiceProvider extends ServiceProvider
+{
+    /**
+     * Set module Alias
+     */
+    protected function setModuleAlias()
+    {
+        $this->alias = strtolower('$module$');
+    }
+
+    /**
+     * Set path to module
+     */
+    protected function setModulePath()
+    {
+        $this->path = __DIR__;
+    }
+
+    public function register()
+	 {
+	    parent::register();
+
+	    $this->publishes([$this->path . '/../Resources/assets/js' =>  resource_path('js/modules/$Module$')], 'vue-module-components');
+	 }
+}

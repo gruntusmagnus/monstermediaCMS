@@ -1,0 +1,27 @@
+/*--------------------------------------------------------------
+-- Page title
+--------------------------------------------------------------*/
+
+.page-title {
+  margin-top: 0.66rem;
+  font-size: 1rem;
+  margin-bottom: 0.66rem;
+}
+
+.page-title__categories {
+  color: #000;
+}
+
+.page-title__chevron {
+  display: inline-block;
+  margin-left: 0.22rem;
+  margin-right: 0.22rem;
+  width: 4px;
+  height: 7px;
+  background-image: url(/img/chevron-right.png);
+  background-repeat: no-repeat;
+  background-size: 4px 7px;
+  position: relative;
+  top: -1px;
+}
+

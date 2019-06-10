@@ -1,0 +1,46 @@
+/*--------------------------------------------------------------
+-- Layout
+--------------------------------------------------------------*/
+
+.content {
+  padding: 1px;
+  min-height: calc(100vh - 105px);
+}
+
+.page {
+  padding-top: 69px;
+}
+
+.page--admin {
+
+  @media only screen and (min-width: 1450px) {
+    padding-top: 116px;
+  }
+}
+
+.page-wrap {
+  background-color: #000;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.page--admin {
+
+  .content {
+    min-height: calc(100vh - 109px);
+  }
+
+  @media only screen and (min-width: 1450px) {
+
+    .content {
+      min-height: calc(100vh - 156px);
+    }
+  }
+}
+
+.container-xl {
+  max-width: 1420px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
